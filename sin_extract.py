@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+#
+# Author: Kati Salin <kati.salin@protonmail.com>
+#
+# See the LICENSE file distributed with this program for the full license text.
+#
+
 import struct
 import os
 import sys
