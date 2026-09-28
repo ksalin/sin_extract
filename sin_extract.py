@@ -3,15 +3,20 @@ import struct
 import os
 import sys
 
-print("==^.^== Sin Reloaded Pak Extractor ==^.^==")
-print("")
+print("""\
+==^.^== Sin Reloaded Pak Extractor ==^.^==
+""")
 
 if len(sys.argv) <= 1:
-    print(f"Usage: {sys.argv[0]} pak0.sin")
-    print("...or some other .sin file")
-    print("")
-    print("It extracts contents of the sin file to a subfolder having its name.")
-    print("")
+    print(f"""\
+Usage:
+  {sys.argv[0]} <sin file> <path to extract to>
+
+Example:
+  {sys.argv[0]} base/pak0.sin
+
+It extracts contents of the sin file to a subfolder having its name.    
+""")
     exit(1)
 
 pak = sys.argv[1]
